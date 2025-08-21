@@ -1,0 +1,66 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Student Feedback Survey</h1>
+    <p id="description">We’d love to hear your thoughts! Please fill out this short survey.</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" name="name" type="text" placeholder="Enter your full name" required />
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" name="email" type="email" placeholder="example@email.com" required />
+
+      <!-- Number -->
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" name="age" type="number" min="10" max="120" placeholder="Your age" required />
+
+      <!-- Dropdown -->
+      <label for="dropdown">Which option best describes your role?</label>
+      <select id="dropdown" name="role">
+        <option value="">Select an option</option>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Radio buttons -->
+      <p>Would you recommend this course?</p>
+      <label><input type="radio" name="recommend" value="yes" /> Yes</label>
+      <label><input type="radio" name="recommend" value="no" /> No</label>
+
+      <!-- Checkboxes -->
+      <p>What topics are you interested in?</p>
+      <label><input type="checkbox" name="topics" value="html" /> HTML</label>
+      <label><input type="checkbox" name="topics" value="css" /> CSS</label>
+      <label><input type="checkbox" name="topics" value="javascript" /> JavaScript</label>
+      <label><input type="checkbox" name="topics" value="python" /> Python</label>
+
+      <!-- Textarea -->
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your thoughts here..."></textarea>
+
+      <!-- Submit button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+
